@@ -10,7 +10,12 @@
       type="image/x-icon"
       sizes="96x96"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Simple Homepage Echoplex | devChallenges.io</title>
 
     <!--You are welcome to delete these styles or modify them in your own stylesheet -->
@@ -23,17 +28,76 @@
 
       body {
         height: 100vh;
+        font-family: "Be Vietnam Pro", sans-serif;
       }
 
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
+      button {
+        border: none;
+        background-color: inherit;
       }
+      header {
+        width: 100%;
+        padding: 24px 32px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
-      .author-info a {
-        text-decoration: none;
+        button {
+          font-size: 1em;
+          font-weight: 600;
+          color: #4138c2;
+          border: 2px solid #9da3ae;
+          padding: 12px 20px;
+          border-radius: 50px;
+        }
+      }
+      section {
+        height: 100vh;
+        width: 100%;
+        padding: 0px 32px;
+      }
+      .hero {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+
+        .side {
+          width: 50%;
+          height: 100%;
+        }
+        .left {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+          color: #121826;
+          gap: 2em;
+          span {
+            color: #4138c2;
+          }
+
+          .btn-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+          }
+          button {
+            font-size: 1em;
+            font-weight: 600;
+            border: 2px solid #4138c2;
+            background-color: #4138c2;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+          }
+          .btn_2 {
+            background-color: white;
+            color: #4138c2;
+          }
+        }
       }
     </style>
   </head>
@@ -108,24 +172,31 @@
     </header>
     <main>
       <section class="hero">
-        <div class="">
+        <div class="left side">
           <h1>
             <span>EchoPlex</span> is the first community-owned digital art
             gallery.
           </h1>
-          <p></p>
-          <div class="">
-            <button>
+          <p>
+            Empowering Artists and Connecting Communities Through Digital Art
+          </p>
+          <div class="btn-container">
+            <button class="btn_1">
               <p>Create</p>
             </button>
 
-            <button>
+            <button class="btn_2">
               <p>Explore</p>
             </button>
           </div>
         </div>
-        <div class="">
-          <img src="./resources/hero_image@2x.png" alt="" />
+        <div class="right side">
+          <img
+            src="./resources/hero_image@2x.png"
+            width="100%"
+            height="100%"
+            alt=""
+          />
         </div>
       </section>
       <section class="category">
