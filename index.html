@@ -99,6 +99,73 @@
           }
         }
       }
+      .category {
+        .category-grid {
+          width: 100%;
+          display: grid;
+          height: 80%;
+          grid-template-columns: repeat(4, 1fr);
+        }
+        .category_card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .emoji {
+          font-size: 2em;
+          padding: 0.4em;
+          border-radius: 15px;
+        }
+        .category_text {
+          font-weight: 600;
+          font-size: 1.2em;
+        }
+      }
+      .action {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./resources/footer_background_image@2x.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        h1 {
+          color: white;
+          width: 30%;
+          text-align: center;
+        }
+        button {
+          margin-top: 2em;
+          font-size: 1em;
+          font-weight: 600;
+          color: white;
+          padding: 12px 20px;
+          border-radius: 50px;
+          background-color: #4138c2;
+        }
+      }
+      footer {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        background-color: #121826;
+        div {
+          display: flex;
+          flex-direction: row;
+          margin-left: 32px;
+          gap: 2em;
+          p {
+            color: #9da3ae;
+            font-weight: 500;
+          }
+        }
+      }
     </style>
   </head>
   <body>
@@ -201,61 +268,63 @@
       </section>
       <section class="category">
         <h1>Join 30,000+ creators and collections</h1>
-        <div class="">
-          <div class="">
-            <p>👾</p>
-            <p>Immersive Digital</p>
-            <p>Art Experience</p>
+        <div class="category-grid">
+          <div class="category_card">
+            <p class="emoji" style="background-color: #c9d2fa">👾</p>
+            <p class="category_text" style="color: #4138c2">
+              Immersive Digital
+            </p>
+            <p class="category_text">Art Experience</p>
           </div>
 
-          <div class="">
-            <p>⚙️</p>
-            <p>Customizable</p>
-            <p>Flooring</p>
+          <div class="category_card">
+            <p class="emoji" style="background-color: #e2fbe8">⚙️</p>
+            <p class="category_text" style="color: #5ec269">Customizable</p>
+            <p class="category_text">Flooring</p>
           </div>
 
-          <div class="">
-            <p>🎭</p>
-            <p>State-of-the-Art</p>
-            <p>Displays</p>
+          <div class="category_card">
+            <p class="emoji" style="background-color: #fbe5e6">🎭</p>
+            <p class="category_text" style="color: #e14f62">State-of-the-Art</p>
+            <p class="category_text">Displays</p>
           </div>
 
-          <div class="">
-            <p>🎓</p>
-            <p>Expertly Designed</p>
-            <p>Lighting and Sound</p>
+          <div class="category_card">
+            <p class="emoji" style="background-color: #fceed8">🎓</p>
+            <p class="category_text" style="color: #e2b53e">
+              Expertly Designed
+            </p>
+            <p class="category_text">Lighting and Sound</p>
           </div>
 
-          <div class="">
-            <p>👨🏻‍💻</p>
-            <p>Community</p>
-            <p>Engagement</p>
+          <div class="category_card">
+            <p class="emoji" style="background-color: #fdf9c9">👨🏻‍💻</p>
+            <p class="category_text" style="color: #e87b35">Community</p>
+            <p class="category_text">Engagement</p>
           </div>
 
-          <div class="">
-            <p>👩‍🎨</p>
-            <p>Artist</p>
-            <p>Collaborations</p>
+          <div class="category_card">
+            <p class="emoji" style="background-color: #c9d2fa">👩‍🎨</p>
+            <p class="category_text" style="color: #4138c2">Artist</p>
+            <p class="category_text">Collaborations</p>
           </div>
 
-          <div class="">
-            <p>📚</p>
-            <p>Educational</p>
-            <p>Programs</p>
+          <div class="category_card">
+            <p class="emoji" style="background-color: #f1e8fd">📚</p>
+            <p class="category_text" style="color: #9d59ef">Educational</p>
+            <p class="category_text">Programs</p>
           </div>
 
-          <div class="">
-            <p>🤖</p>
-            <p>Technology</p>
-            <p>Integration</p>
+          <div class="category_card">
+            <p class="emoji" style="background-color: #d5faf1">🤖</p>
+            <p class="category_text" style="color: #52b3d0">Technology</p>
+            <p class="category_text">Integration</p>
           </div>
         </div>
       </section>
       <section class="action">
-        <div>
-          <h1>Begin you digital art journey with EchoPlex</h1>
-          <button><p>Create</p></button>
-        </div>
+        <h1>Begin you digital art journey with EchoPlex</h1>
+        <button><p>Create</p></button>
       </section>
     </main>
     <footer>
